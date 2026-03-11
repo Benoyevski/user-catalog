@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.btn:hover:not(:disabled):not(.active) {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.btn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+}
+
+.ellipsis {
+  padding: 0 4px;
+  color: #9ca3af;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+}

@@ -1,0 +1,106 @@
+.card {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e8eaed;
+  border-radius: 10px;
+  padding: 16px;
+  transition: box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.avatar {
+  flex-shrink: 0;
+}
+
+.avatar img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f0f2f5;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 48px;
+}
+
+.username {
+  font-size: 12px;
+  color: #9ca3af;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.metaItem {
+  display: flex;
+  gap: 6px;
+  font-size: 13px;
+  color: #374151;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.metaLabel {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  min-width: 36px;
+  padding-top: 1px;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.jobTitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3b82f6;
+}
+
+.companyName {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 11px;
+  color: #6b7280;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
